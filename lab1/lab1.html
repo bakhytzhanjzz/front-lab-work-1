@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshop</title>
+    <link rel="icon" href="icon.ico">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to the main CSS file for styling the webpage -->
+</head>
+<body>
+
+    <header> <!--header section-->
+        <h1>Welcome to BakhytzhanBooks</h1> 
+        <h2>The best bookshop to stop reading wanky pretentious literature and actually get into classics!</h2>
+    </header>
+
+    <nav><!-- Navigation Bar: Links to different pages -->
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#books">Our Books</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h3>About Our Bookshop</h3>
+        <p>We offer a wide variety of books, mainly classic literature. Browse our collection and find your next great read.</p>
+        <img src="bookshop.jpg" alt="Our bookshop" width="300">
+    </section>
+
+    <section id="books"> <!-- Book Collection Section: Displays list of available books -->
+        <h3>Our Book Collection</h3>
+        <table><!-- Using a table to display books with their titles, authors, and prices -->
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody> <!-- i chose all the books by myself and got a little tired while typing it all here -->
+                <tr>
+                    <td>Decline and Fall</td>
+                    <td>Evelyn Waugh</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>Thank You, Jeeves!</td>
+                    <td>P.G. Wodehouse</td>
+                    <td>$12</td>
+                </tr>
+                <tr>
+                    <td>Theatre</td>
+                    <td>Somerset Maugham</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Brideshead Revisited</td>
+                    <td>Evelyn Waugh</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>The Code of the Woosters</td>
+                    <td>P.G. Wodehouse</td>
+                    <td>$14</td>
+                </tr>
+                <tr>
+                    <td>Of Human Bondage</td>
+                    <td>Somerset Maugham</td>
+                    <td>$22</td>
+                </tr>
+                <tr>
+                    <td>A Passage to India</td>
+                    <td>E.M. Forster</td>
+                    <td>$16</td>
+                </tr>
+                <tr>
+                    <td>Howards End</td>
+                    <td>E.M. Forster</td>
+                    <td>$18</td>
+                </tr>
+                <tr>
+                    <td>The Man Within</td>
+                    <td>Graham Greene</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td>The Power and the Glory</td>
+                    <td>Graham Greene</td>
+                    <td>$17</td>
+                </tr>
+                <tr>
+                    <td>The Secret Agent</td>
+                    <td>Joseph Conrad</td>
+                    <td>$13</td>
+                </tr>
+                <tr>
+                    <td>Lord Jim</td>
+                    <td>Joseph Conrad</td>
+                    <td>$14</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <form action="submit_form.php" method="POST"> <!-- Form for users to contact us -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer> <!-- Footer Section: Organisation name -->
+        <p>&copy; 2024 BakhytzhanBooks. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
